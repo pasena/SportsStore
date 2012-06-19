@@ -29,7 +29,7 @@ namespace SportsStore.WebUI.Infrastructure
 
         private void AddBindings()
         {
-            ninjectKernel.Bind<IProductRepository>().To<EFProductRepository>();
+            ninjectKernel.Bind<IProductRepository>().To<EFProductRepository>(); 
 
             EmailSettings emailSettings =
                 new EmailSettings { WriteAsFile = bool.Parse(ConfigurationManager.AppSettings["Email.WriteAsFile"] ?? "false") };

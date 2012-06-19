@@ -1,0 +1,16 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <link href="@Url.Content("~/Content/Admin.css")" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div>
+        @if (TempData["message"] != null)
+        { 
+            <div class="Message">@TempData["message"]</div>
+        }
+        @RenderBody()
+    </div>
+</body>
+</html>
