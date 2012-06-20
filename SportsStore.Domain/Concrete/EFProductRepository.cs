@@ -13,7 +13,10 @@ namespace SportsStore.Domain.Concrete
 
         public IQueryable<Entities.Product> Products
         {
-            get { return context.Products; }
+            get
+            {
+                return context.Products;
+            }
         }
 
         public void SaveProduct(Entities.Product product)

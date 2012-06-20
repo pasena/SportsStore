@@ -35,7 +35,7 @@
                 @using (Html.BeginForm("Delete", "Admin"))
                 {
                     @Html.Hidden("ProductID", item.ProductID)
-                    <input type="submit" value="Delete" />
+                    <input type="submit" value="Delete" onclick="return confirm('You really want to delete this product?');"  />
                 }
             </td>
         </tr>
